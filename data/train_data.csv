@@ -1,0 +1,11 @@
+text,label
+"User executed 'powershell -nop -w hidden -enc ...'","Execution:Malicious"
+"Multiple failed SSH login attempts from 10.0.0.5","Recon:Bruteforce"
+"DNS request for suspicious-domain[.]xyz","Recon:SuspiciousDNS"
+"Large upload to external IP 93.184.216.34","Exfiltration:LargeUpload"
+"New service installed: persistence agent","Persistence:ServiceInstall"
+"Normal user login successful","Benign"
+"Scheduled task created running cmd.exe every minute","Persistence:ScheduledTask"
+"Port scan from 192.168.1.50 seen on 5 ports","Recon:PortScan"
+"Created compressed archive secret.zip and uploaded","Exfiltration:ArchiveUpload"
+"SSH login from known admin workstation","Benign"

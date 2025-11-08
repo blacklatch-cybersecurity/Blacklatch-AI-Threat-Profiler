@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blacklatch AI Threat Profiler</title>
+  <meta http-equiv="refresh" content="4">
+  <style>
+    body { background:#0b1220; color:#e6eef8; font-family:monospace; padding:20px; }
+    .entry { background:#111827; padding:12px; border-radius:8px; margin-bottom:10px; }
+    .prediction { color:#f97316; font-weight:bold; }
+    .score { color:#34d399; font-weight:bold; }
+    .time { color:#6b7280; font-size:12px; }
+  </style>
+</head>
+<body>
+  <h2>⚡ Blacklatch AI Threat Profiler — Live Dashboard</h2>
+  {% for it in items %}
+    <div class="entry">
+      <div class="time">{{ it.time_fmt }}</div>
+      <div>🔹 <span class="prediction">{{ it.prediction }}</span> — <span class="score">{{ it.score }}/10</span></div>
+      <div>{{ it.text }}</div>
+      <div><i>{{ it.explain }}</i></div>
+    </div>
+  {% endfor %}
+  {% if not items %}
+    <div>No logs yet... start the profiler and log generator.</div>
+  {% endif %}
+</body>
+</html>
