@@ -4229,3 +4229,6 @@ DNS request for suspicious-domain[.]xyz
 User executed 'powershell -nop -w hidden -enc ...'
 Created compressed archive secret.zip and uploaded
 User executed 'powershell -nop -w hidden -enc ...'
+Normal user login successful
+Created compressed archive secret.zip and uploaded
+Port scan from 192.168.1.50 seen on 5 ports
